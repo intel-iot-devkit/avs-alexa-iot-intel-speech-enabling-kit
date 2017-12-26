@@ -1,0 +1,5 @@
+SENSOR_METRIC
+
+temperature
+on
+off
