@@ -1,0 +1,7 @@
+QueryIntent what's the {metric}
+QueryIntent tell me what's the {metric} now
+QueryIntent the {metric} please
+QueryIntent turn {metric}
+AMAZON.StopIntent ok thanks
+AMAZON.StopIntent ok
+AMAZON.StopIntent thanks
