@@ -1,0 +1,16 @@
+{
+  "name": "AlexaSkill",
+  "version": "1.0.0",
+  "description": "Lambda function for Alexa",
+  "readme": "Lambda function for Alexa",
+  "main": "index.js",
+  "scripts": {
+    "zip": "zip -r ./index.zip . -x 'package.json' -x '*.git*' "
+  },
+  "author": "Wai Lun Poon",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "latest",
+    "aws-sdk": "latest"
+  }
+}
