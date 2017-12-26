@@ -28,13 +28,13 @@ An Alexa skill converts spoken commands into computing functions, which are defi
 ### 2. Connect sensors/actuators and setup MRAA & UPM
 1. Plug in an Arduino 101 to your main computer and upload the StandardFirmata sketch
 2. Attach a Grove Shield to the Arduino 101.
-..* Attach a temperature sensor to the A0 port
-..* Attach an LED to the D4 port (can also be a relay)
+  * Attach a temperature sensor to the A0 port
+  * Attach an LED to the D4 port (can also be a relay)
 3. Plug the Arduino 101 into your Raspberry Pi running AVS
 4. Install MRAA & UPM
-..* `npm install -g mraa`
-..* `npm install -g jsupm_grove`
-..* Note: Make sure you have all dependencies are resolved, such as node-gyp, nodejs-dev, build-essential. etc.
+  * `npm install -g mraa`
+  * `npm install -g jsupm_grove`
+  * Note: Make sure you have all dependencies are resolved, such as node-gyp, nodejs-dev, build-essential. etc.
 5. Identify the serial port where the Arduino 101 is connected (usually /dev/ttyACM0)
 6. Try some MRAA/UPM code samples to make sure you are able to interact with the Arduino 101
 
@@ -52,9 +52,9 @@ An Alexa skill converts spoken commands into computing functions, which are defi
 1. Create a new Lambda function [](http://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html)
 2. Select 'Alexa Skills Kit' as a trigger
 3. Upload the Lambda function code
-..1. Under `/lambda` run `npm install` to install the node_modules
-..2. Zip all the files by running `npm run zip`
-..3. Upload the output file `index.zip` to your Lambda and save
+  1. Under `/lambda` run `npm install` to install the node_modules
+  2. Zip all the files by running `npm run zip`
+  3. Upload the output file `index.zip` to your Lambda and save
 4. Test your Lambda with the Alexa Skill with the Service Simulator e.g. Enter "What's the Temperature" as an example utterance
 
 ## 6. Try out your skill!
