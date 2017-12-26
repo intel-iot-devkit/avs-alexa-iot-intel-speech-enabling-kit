@@ -1,9 +1,9 @@
 //AWS IoT Config
 
 var config = {};
-config.IOT_SENSOR_BROKER_ENDPOINT        = "THING_ENDPOINT";
-config.IOT_SENSOR_BROKER_REGION          = "THING_REGION";
-config.IOT_SENSOR_THING_NAME             = "THING_NAME";
+config.IOT_SENSOR_BROKER_ENDPOINT        = 'THING_ENDPOINT';
+config.IOT_SENSOR_BROKER_REGION          = 'THING_REGION';
+config.IOT_SENSOR_THING_NAME             = 'THING_NAME';
 
 //Skill Messages
 var SkillMessages = {
@@ -26,7 +26,7 @@ var states = {
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
-    // alexa.appId = 'amzn1.echo-sdk-ams.app.1234';
+    // alexa.appId = 'appId';
     var locale = event.request.locale;
     console.log('locale is set to ' + locale);
     alexa.registerHandlers(handlers);
