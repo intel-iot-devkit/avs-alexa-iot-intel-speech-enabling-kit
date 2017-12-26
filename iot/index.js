@@ -3,24 +3,24 @@ var mraa = require("mraa");
 var grove = require("jsupm_grove");
 
 var thingShadows = awsIoT.thingShadow({
-  keyPath: "PATH_TO_KEY",
-  certPath: "PATH_TO_CERT",
-  caPath: "PATH_TO_CA",
-  clientId: "CLIENT_ID",
-  host: "ENDPOINT"
+  keyPath   : "PATH_TO_KEY",
+  certPath  : "PATH_TO_CERT",
+  caPath    : "PATH_TO_CA",
+  clientId  : "CLIENT_ID",
+  host      : "ENDPOINT"
 });
 
-var thing = 'NAME_OF_THING'
-
-var firmataOffset = 512;
-var tempSensorPin = 0;
-var ledPin = 4;
+var thing = 'NAME_OF_THING';
+var firmataOffset = 512; //pin number offset when using MRAA over Firmata SubPlatform
+var tempSensorPin = 0; //port A0 on Grove Shield
+var ledPin = 4; //port D4 on Grove Shield
+var serialPort = '/dev/ttyACM0';
 
 var clientTokenUpdate;
 var temperature = 0; //temperature reading
 var ledState = 0; //LED state
 
-mraa.addSubplatform(mraa.GENERIC_FIRMATA, "/dev/ttyACM0");
+mraa.addSubplatform(mraa.GENERIC_FIRMATA, serialPort);
 var tempSensor = new grove.GroveTemp(firmataOffset+tempSensorPin);
 var led = new mraa.Gpio(firmataOffset+ledPin);
 led.dir(mraa.DIR_OUT);
