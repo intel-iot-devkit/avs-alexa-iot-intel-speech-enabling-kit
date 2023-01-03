@@ -1,3 +1,7 @@
+# DISCONTINUATION OF PROJECT #
+This project will no longer be maintained by Intel.
+Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.
+Intel no longer accepts patches to this project.
 ## What Is It?
 
 With your Alexa/ Voice Service (AVS) enabled device, you can create Alexa skills that let's you interact with hardware devices, such as reading sensor data or activating a relay, all with the command of your voice!
